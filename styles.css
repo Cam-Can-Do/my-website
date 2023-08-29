@@ -1,0 +1,123 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  a {
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: #ff009d;
+  }
+
+/* Center the entire content of the page */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #333; /* Background color for dark mode */
+    color: white; /* Text color for dark mode */
+}
+
+/* Add your CSS styles here */
+.App {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    padding: 20px;
+    text-align: left; /* Align text within the content to the left */
+    background-color: #282828; /* Content background color */
+    border-radius: 10px; /* Add rounded corners to the content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for depth */
+    border: 2px solid transparent; /* Start with a transparent border */
+    animation: borderColorChange 25s infinite; /* Add color-changing animation to the border */
+}
+
+
+.header-title {
+    background-color: #383838;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px; /* Adjust the value to control the roundness of corners */
+    margin-bottom: 5px;
+}
+
+
+.rounded {
+    border: 2px solid transparent; /* Start with a transparent border */
+    width: 100%; /* Adjust the width as needed */
+    height: 2px;
+    margin: 0 auto; /* Center the element horizontally */
+    animation: borderColorChange 5s infinite; /* Add color-changing animation to the border */
+}
+
+@keyframes borderColorChange {
+    0% { border-color: rgb(0, 115, 255); }
+    40% { border-color: rgb(39, 10, 255); }
+    80% { border-color: rgb(200, 0, 255); }
+    100% { border-color: rgb(255, 255, 255); }
+}
+
+.text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+.connect-section {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.connect-heading {
+    margin: 0;
+    flex-shrink: 0; /* Prevent the heading from shrinking */
+}
+
+.logo {
+    display: flex;
+    gap: 0px; /* Adjust the gap between logos as needed */
+    align-items: center; /* Vertically align logos with text */
+}
+
+.logo-link {
+    color: white;
+}
+
+
+
+/* Style Font Awesome icons */
+.fa-brands {
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+/* Style for the footer text */
+.footer-text {
+    text-align: center;
+    margin-top: 20px; /* Add a smaller margin to push the text closer to the border */
+    padding: 0px; /* Add less padding for spacing */
+}
+
+
+.heart {
+    color: red;
+}
